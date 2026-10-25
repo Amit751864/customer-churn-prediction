@@ -1,0 +1,16 @@
+
+from pathlib import Path
+
+requirements = """pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+joblib
+jupyter
+"""
+
+Path("requirements.txt").write_text(requirements, encoding="utf-8")
+
+print("requirements.txt created successfully!")
+print(Path("requirements.txt").read_text())
