@@ -1,14 +1,13 @@
 
 from pathlib import Path
 
-requirements = """pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
+
+"""streamlit==1.66.1
+pandas==3.0.6
+numpy==2.5.4
+scikit-learn==1.9.1
 joblib
-jupyter
-"""
+
 
 Path("requirements.txt").write_text(requirements, encoding="utf-8")
 
